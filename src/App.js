@@ -2,9 +2,11 @@ import Section from './components/Section';
 import Profile from './components/Profile';
 import Statistics from './components/Statistics';
 import FriendList from './components/FriendList';
+import TransactionHistory from './components/TransactionHistory';
 import data from './JSON/data.json';
 import user from './JSON/user.json';
 import friends from './JSON/friends.json';
+import transactions from './JSON/transactions.json';
 
 export default function App() {
   return (
@@ -25,6 +27,10 @@ export default function App() {
 
       <Section>
         <FriendList params={friends} />
+      </Section>
+
+      <Section>
+        <TransactionHistory transactions={transactions} />
       </Section>
     </div>
   );

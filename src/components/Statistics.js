@@ -16,4 +16,6 @@ export default function Statistics({ datas }) {
 
 Statistics.propTypes = {
   datas: PropTypes.arrayOf(PropTypes.shape({})),
+  label: PropTypes.string,
+  percentage: PropTypes.number,
 };

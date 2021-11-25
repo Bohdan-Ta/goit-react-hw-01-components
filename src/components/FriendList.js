@@ -16,4 +16,7 @@ export default function Friendlist({ params }) {
 }
 Friendlist.propTypes = {
   params: PropTypes.arrayOf(PropTypes.shape({})),
+  isOnline: PropTypes.string,
+  avatar: PropTypes.string,
+  name: PropTypes.string,
 };
