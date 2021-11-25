@@ -1,8 +1,11 @@
-import Profile from "./components/Profile";
-import Section from "./components/Section";
-import Statistics from "./components/Statistics";
-import data from "./JSON/data.json";
-import user from "./JSON/user.json";
+import Section from './components/Section';
+import Profile from './components/Profile';
+import Statistics from './components/Statistics';
+import FriendList from './components/FriendList';
+import data from './JSON/data.json';
+import user from './JSON/user.json';
+import friends from './JSON/friends.json';
+
 export default function App() {
   return (
     <div>
@@ -18,6 +21,10 @@ export default function App() {
 
       <Section title="Upload stats">
         <Statistics datas={data} />
+      </Section>
+
+      <Section>
+        <FriendList params={friends} />
       </Section>
     </div>
   );

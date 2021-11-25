@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 export default function Statistics({ datas }) {
   return (
     <ul>
-      {" "}
-      {datas.map((date) => (
+      {' '}
+      {datas.map(date => (
         <li key={date.id}>
           <span>{date.label}</span>
           <span>{date.percentage}</span>
