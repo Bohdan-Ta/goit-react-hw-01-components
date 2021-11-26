@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import './FriendList.module.css';
 export default function Friendlist({ params }) {
   return (
     <ul>
