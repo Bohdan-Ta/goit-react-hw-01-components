@@ -1,0 +1,12 @@
+.section {
+  padding: 50px 0;
+  margin: 5px auto;
+  background-color: grey;
+}
+
+.title {
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  text-transform: uppercase;
+}

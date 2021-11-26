@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  width: 500px;
+  background-color: #fff;
+  border: 2px grey solid;
+  text-align: center;
+}
+.item {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.list {
+  display: block;
+  background-color: yellow;
+  border-right: 2px green solid;
+}
+
+.label {
+  display: block;
+}
+
+.persentage {
+  display: block;
+}

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import './FriendList.module.css';
+import s from './FriendList.module.css';
 export default function Friendlist({ params }) {
   return (
-    <ul>
+    <ul className={s.list}>
       {' '}
       {params.map(param => (
-        <li key={param.id}>
+        <li key={param.id} className={s.item}>
           <span>{param.isOnline}</span>
           <img src={param.avatar} alt="{param.name} avatar" width="48" />
           <p>{param.name}</p>

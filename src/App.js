@@ -1,4 +1,4 @@
-import Section from './components/Section';
+import Section from './components/Section/Section';
 import Profile from './components/Profile';
 import Statistics from './components/Statistics';
 import FriendList from './components/FriendList';
