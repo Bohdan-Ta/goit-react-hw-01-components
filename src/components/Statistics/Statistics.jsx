@@ -5,7 +5,6 @@ export default function Statistics({ datas }) {
   return (
     <div className={s.container}>
       <ul className={s.item}>
-        {' '}
         {datas.map(date => (
           <li key={date.id} className={s.list}>
             <span className={s.label}>{date.label}</span>

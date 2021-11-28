@@ -1,7 +1,12 @@
 .section {
   padding: 50px 0;
   margin: 5px auto;
-  background-color: grey;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  background-color: #fff;
 }
 
 .title {

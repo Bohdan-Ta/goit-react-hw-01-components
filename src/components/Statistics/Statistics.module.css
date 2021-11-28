@@ -1,8 +1,6 @@
 .container {
   margin: 0 auto;
   width: 500px;
-  background-color: #fff;
-  border: 2px grey solid;
   text-align: center;
 }
 .item {
@@ -11,10 +9,17 @@
   justify-content: space-around;
 }
 
+.title {
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .list {
   display: block;
   background-color: yellow;
-  border-right: 2px green solid;
+  border: 2px green solid;
 }
 
 .label {

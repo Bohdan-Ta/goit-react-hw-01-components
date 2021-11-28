@@ -2,9 +2,10 @@ li {
   width: calc((100% - 4 * 1px) / 2);
 }
 .profile {
-  background-color: white;
-  width: 300px;
   margin: 0 auto;
+  width: 300px;
+  border: 2px black solid;
+  border-radius: 5px;
 }
 
 .description {
