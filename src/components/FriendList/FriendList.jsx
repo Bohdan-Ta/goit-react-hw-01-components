@@ -6,8 +6,17 @@ export default function Friendlist({ params }) {
       <ul className={s.list}>
         {' '}
         {params.map(param => (
-          <li key={param.id} className={s.item}>
-            <span className={s.onLine}>{param.isOnline}</span>
+          <li
+            key={param.id}
+            className={s.item}
+            style={{ borderColor: param.isOnline ? 'green' : 'red' }}
+          >
+            <span
+              className={s.onLine}
+              style={{ backgroundColor: param.isOnline ? 'green' : 'red' }}
+            >
+              {param.isOnline ? 'on' : 'off'}{' '}
+            </span>
             <img src={param.avatar} alt="{param.name} avatar" width="100" />
             <p className={s.name}>{param.name}</p>
           </li>
