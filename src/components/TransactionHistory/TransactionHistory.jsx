@@ -26,4 +26,7 @@ export default function TransactionHistory({ transactions }) {
 
 TransactionHistory.propType = {
   transaction: PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
 };
