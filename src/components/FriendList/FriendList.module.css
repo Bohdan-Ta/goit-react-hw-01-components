@@ -23,6 +23,12 @@
   height: 30px;
   border-radius: 5px;
 }
+.colorOnLine {
+  border-color: green;
+}
+.colorOffLine {
+  border-color: red;
+}
 
 .name {
   margin-left: 20px;

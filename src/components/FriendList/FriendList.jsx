@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import s from './FriendList.module.css';
-
 export default function Friendlist({ params }) {
   return (
     <div className={s.box}>
@@ -9,8 +8,9 @@ export default function Friendlist({ params }) {
         {params.map(param => (
           <li
             key={param.id}
-            className={s.item}
-            style={{ borderColor: param.isOnline ? 'green' : 'red' }}
+            className={`${s.item} ${
+              param.isOnline ? s.colorOnLine : s.colorOffLine
+            }`}
           >
             <span
               className={s.onLine}
