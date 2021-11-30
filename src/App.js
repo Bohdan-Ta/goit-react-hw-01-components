@@ -1,13 +1,13 @@
-import Section from './components/Section/Section';
+import data from './data/data.json';
+import user from './data/user.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
+
+import Section from './components/Section';
 import Profile from './components/Profile';
 import Statistics from './components/Statistics';
 import FriendList from './components/FriendList';
 import TransactionHistory from './components/TransactionHistory';
-
-import data from './JSON/data.json';
-import user from './JSON/user.json';
-import friends from './JSON/friends.json';
-import transactions from './JSON/transactions.json';
 
 export default function App() {
   return (
@@ -23,7 +23,7 @@ export default function App() {
       </Section>
 
       <Section title="Upload stats">
-        <Statistics datas={data} />
+        <Statistics stats={data} />
       </Section>
 
       <Section title="Friends">
